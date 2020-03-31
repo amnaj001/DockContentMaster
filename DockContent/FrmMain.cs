@@ -17,6 +17,8 @@ namespace DockContentMaster
         public FrmMain()
         {
             InitializeComponent();
+            var theme = new VS2015LightTheme();
+            dockPanel1.Theme = theme;
         }
 
         private void FrmMain_Load(object sender, EventArgs e)
