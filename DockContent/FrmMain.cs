@@ -33,6 +33,12 @@ namespace DockContentMaster
 
         }
 
+        public void ShowForm1()
+        {
+            var dockForm1 = new Form1();
+            dockForm1.Show(dockPanel1, DockState.Document);
+        }
+
         public void ShowForm2()
         {
             var dockForm2 = new Form2();
@@ -41,7 +47,7 @@ namespace DockContentMaster
 
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
-            ShowDockContent();
+            ShowForm1();
         }
 
         private void toolStripButton2_Click(object sender, EventArgs e)
