@@ -52,7 +52,7 @@ namespace DockContentMaster
         private void ShowTableOdoo()
         {
             sb.Remove(0, sb.Length);
-            sb.Append("SELECT id,name,street FROM res_partner");
+            sb.Append("SELECT * FROM account_invoice");
             string sqlInv = sb.ToString();
             dgvInv.DataSource = ConndbAS.ExecuteReaderOdoo(sqlInv);
             //FormatGridView();
