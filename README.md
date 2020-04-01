@@ -1,2 +1,2 @@
 # DockContentMaster
-For Dock content C# project
+For Dock content C# project and database connection
