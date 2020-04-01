@@ -14,6 +14,7 @@ namespace DockContentMaster
         private readonly string strConnPG = ConfigurationManager.ConnectionStrings["ConnPG"].ConnectionString;
         readonly SqlConnection Conn = new SqlConnection();
         readonly NpgsqlConnection ConnPG = new NpgsqlConnection();
+        //Public ConndbKR As New SqlConnection(strconnReport);
         SqlCommand cmd;
         NpgsqlCommand pgcmd;
         public SqlConnection Connect()

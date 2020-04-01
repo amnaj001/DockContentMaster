@@ -16,6 +16,7 @@ namespace DockContentMaster
     {
         Form1 F1 = null;
         Form2 F2 = null;
+        Form3 F3 = null;
         public FrmMain()
         {
             InitializeComponent();
@@ -28,6 +29,7 @@ namespace DockContentMaster
             //ShowDockContent();
             ShowForm1();
             ShowForm2();
+            ShowForm3();
         }
 
         public void ShowDockContent()
@@ -65,6 +67,20 @@ namespace DockContentMaster
             {
                 F2.Show(dockPanel1, DockState.DockRight);
                 F2.Focus();
+            }
+        }
+
+        public void ShowForm3()
+        {
+            if (F3 == null || F3.Text == "")
+            {
+                F3 = new Form3();
+                F3.Show(dockPanel1, DockState.DockBottom);
+            }
+            else if (CheckOpened(F3.Text))
+            {
+                F3.Show(dockPanel1, DockState.DockBottom);
+                F3.Focus();
             }
         }
 
